@@ -68,3 +68,5 @@
 /home/berkekoralp/NetProjectsVS/DapperAPI/DapperAPI/obj/Debug/net8.0/DapperAPI.pdb
 /home/berkekoralp/NetProjectsVS/DapperAPI/DapperAPI/obj/Debug/net8.0/DapperAPI.genruntimeconfig.cache
 /home/berkekoralp/NetProjectsVS/DapperAPI/DapperAPI/obj/Debug/net8.0/ref/DapperAPI.dll
+/home/berkekoralp/NetProjectsVS/DapperAPI/DapperAPI/obj/Debug/net8.0/DapperAPI.sourcelink.json
+/home/berkekoralp/NetProjectsVS/DapperAPI/DapperAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

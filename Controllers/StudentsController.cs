@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 using Dapper;
 using DapperApi.Services;
 using DapperApı.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 
 namespace DapperApı.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class StudentsController : ControllerBase
     {
@@ -65,7 +67,7 @@ namespace DapperApı.Controllers
         //CREATING STUDENT
 
         [HttpPost]
-        public ActionResult Post([FromBody] StudentsDto studentsDto)
+        public ActionResult CreateStudent([FromBody] StudentsDto studentsDto)
         {
 
             try
@@ -73,7 +75,8 @@ namespace DapperApı.Controllers
                 var student = new Students
                 {
                     name = studentsDto.name,
-                    email = studentsDto.email
+                    email = studentsDto.email,
+                    password = studentsDto.password
                 };
 
                 var newStudent = _databaseService.Add(student);

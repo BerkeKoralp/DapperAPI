@@ -13,5 +13,8 @@ public class Students
     [Required]
     public string? email {set;get;}
 
+    [Required]
+    public string? password {set;get;}
+
 
 }

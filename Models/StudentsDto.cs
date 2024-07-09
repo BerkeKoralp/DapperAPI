@@ -12,4 +12,7 @@ public class StudentsDto {
 
     [Required]
     public string? email {set;get;}
+
+    [Required]
+    public string? password {set;get;}
 }
